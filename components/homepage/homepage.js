@@ -33,27 +33,13 @@ import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
 import Link from "next/link";
 
-const items = [
-  { id: 1, title: 'Back End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },
-  { id: 2, title: 'Front End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },
-  { id: 3, title: 'User Interface Designer', department: 'Design', type: 'Full-time', location: 'Remote' },
-]
-const user = {
-  name: "Yeasir Arafat",
-  email: "yeasir402@gmail.com",
-  imageUrl:"/images/yeasir.jpg"
-};
 const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: true },
   { name: "Tags", href: "/tags", icon: ArrowTrendingUpIcon, current: false },
   { name: "Users", href: "/users", icon: UserGroupIcon, current: false },
   { name: "Contact", href: "/contact", icon: ChatBubbleBottomCenterTextIcon, current: false },
 ];
-const userNavigation = [
-  { name: "Your Profile", href: "#" },
-  { name: "Settings", href: "#" },
-  { name: "Sign out", href: "#" },
-];
+
 const communities = [
   { name: "React", href: "#" },
   { name: "Flutter", href: "#" },
@@ -67,78 +53,6 @@ const quicklinks = [
   { name: "Facebook", href: "#" },
   { name: "Github", href: "#" },
   { name: "Twitter", href: "#" },
-];
-// const tabs = [
-//   { name: "Recent", href: "#", current: true },
-//   { name: "Most Viewed", href: "#", current: false },
-//   { name: "Most Answers", href: "#", current: false },
-// ];
-const trendingPosts = [
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl:"/images/yeasir.jpg"
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl:"/images/yeasir.jpg"
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg"
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg"
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg"
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-
-  // More posts...
-];
-const whoToFollow = [
-  {
-    name: "Yeasir Arafat",
-    handle: "yeasirar",
-    href: "#",
-    imageUrl:"/images/yeasir.jpg"  },
-  {
-    name: "Yeasir Arafat",
-    handle: "yeasirar",
-    href: "#",
-    imageUrl:"/images/yeasir.jpg"  },
-  {
-    name: "Yeasir Arafat",
-    handle: "yeasirar",
-    href: "#",
-    imageUrl:"/images/yeasir.jpg"  },
-  // More people...
 ];
 
 function classNames(...classes) {
