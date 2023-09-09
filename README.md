@@ -1,9 +1,5 @@
 # Tech_Discussion
-## Project Report -->
-https://shorturl.at/qFQT2
 
-## Project Recording (Addressing my course teacher)
-https://shorturl.at/nFNSZ
 
 ## Features
 - Anyone can ask question or share blogs.
