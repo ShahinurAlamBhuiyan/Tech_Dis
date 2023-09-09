@@ -1,5 +1,5 @@
 # Tech_Discussion
-## Full Report -->
+## Project Report -->
 https://shorturl.at/qFQT2
 
 ## Project Recording (Addressing my course teacher)
