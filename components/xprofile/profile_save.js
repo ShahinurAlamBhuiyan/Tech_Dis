@@ -12,7 +12,7 @@ export default function ProfileSave() {
       views: "2.7k",
       author: {
         name: "Yeasir Arafat",
-        imageUrl: "/images/yeasir.jpg",
+        imageUrl: "/",
         href: "#",
       },
       date: "December 9 at 11:43 AM",
@@ -30,7 +30,7 @@ export default function ProfileSave() {
       views: "2.7k",
       author: {
         name: "Yeasir Arafat",
-        imageUrl: "/images/yeasir.jpg",
+        imageUrl: "/",
         href: "#",
       },
       date: "December 9 at 11:43 AM",
@@ -48,7 +48,7 @@ export default function ProfileSave() {
       views: "2.7k",
       author: {
         name: "Yeasir Arafat",
-        imageUrl: "/images/yeasir.jpg",
+        imageUrl: "/",
         href: "#",
       },
       date: "December 9 at 11:43 AM",

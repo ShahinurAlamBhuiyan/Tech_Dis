@@ -1,6 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
 import { Menu, Popover, Transition } from "@headlessui/react";
-import yeasir_img from "../../public/images/yeasir.jpg";
 import SaveRoundedIcon from "@mui/icons-material/SaveRounded";
 import {
   ChatBubbleLeftEllipsisIcon,
@@ -36,20 +35,7 @@ import Editor from "../../components/editor/editor";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Ask_AI from "./ask_ai";
-const user = {
-  name: "Yeasir Arafat",
-  email: "yeasir402@gmail.com",
-  imageUrl: "/images/yeasir.jpg",
-};
-// const comments = [
-//   {
-//     id: 1,
-//     name: "Leslie Alexander",
-//     date: "4d ago",
-//     imageUrl: "/images/anna.jpeg",
-//     body: "Ducimus quas delectus ad maxime totam doloribus reiciendis ex. Tempore dolorem maiores. Similique voluptatibus tempore non ut.",
-//   },
-// ];
+
 const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: false },
   { name: "Tags", href: "/tags", icon: ArrowTrendingUpIcon, current: false },
@@ -71,115 +57,7 @@ const quicklinks = [
   { name: "Twitter", href: "#" },
 ];
 
-// const answers = [
-//   {
-//     id: "81614",
-//     likes: "29",
-//     replies: "11",
-//     views: "2.7k",
-//     author: {
-//       name: "Yeasir Arafat",
-//       imageUrl: "/images/yeasir.jpg",
-//       href: "#",
-//     },
-//     date: "December 9 at 11:43 AM",
-//     datetime: "2020-12-09T11:43:00",
-//     href: "#",
-//     title: "How to cleanly make multiple elements movable anywhere?",
-//     body: `
-//       <p>The problem is: I don't wanna test for every single date field, like year, month, day, hour, minute, etc., but if I simply compare the two values, it'll always display both values, since the time precision goes beyond seconds, making the dates different even though I never edited that particular post.</p>
-//     `,
-//   },
-//   {
-//     id: "81614",
-//     likes: "29",
-//     replies: "11",
-//     views: "2.7k",
-//     author: {
-//       name: "Yeasir Arafat",
-//       imageUrl: "/images/yeasir.jpg",
-//       href: "#",
-//     },
-//     date: "December 9 at 11:43 AM",
-//     datetime: "2020-12-09T11:43:00",
-//     href: "#",
-//     title: "How to cleanly make multiple elements movable anywhere?",
-//     body: `
-//       <p>The problem is: I don't wanna test for every single date field, like year, month, day, hour, minute, etc., but if I simply compare the two values, it'll always display both values, since the time precision goes beyond seconds, making the dates different even though I never edited that particular post.</p>
-//     `,
-//   },
-// ];
 
-const whoToFollow = [
-  {
-    name: "Yeasir Arafat",
-    handle: "yeasirar",
-    href: "#",
-    imageUrl: "/images/yeasir.jpg",
-  },
-  {
-    name: "Yeasir Arafat",
-    handle: "yeasirar",
-    href: "#",
-    imageUrl: "/images/yeasir.jpg",
-  },
-  {
-    name: "Yeasir Arafat",
-    handle: "yeasirar",
-    href: "#",
-    imageUrl: "/images/yeasir.jpg",
-  },
-  // More people...
-];
-const trendingPosts = [
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-
-  // More posts...
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

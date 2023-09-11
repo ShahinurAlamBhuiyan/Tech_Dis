@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { Menu, Popover, Transition } from "@headlessui/react";
-import yeasir_img from '../../public/images/yeasir.jpg'
+
 import {
   ChatBubbleLeftEllipsisIcon,
   CodeBracketIcon,
@@ -39,22 +39,14 @@ const items = [
   { id: 2, title: 'Front End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },
   { id: 3, title: 'User Interface Designer', department: 'Design', type: 'Full-time', location: 'Remote' },
 ]
-const user = {
-  name: "Yeasir Arafat",
-  email: "yeasir402@gmail.com",
-  imageUrl: "/images/yeasir.jpg"
-};
+
 const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: true },
   { name: "Tags", href: "/tags", icon: ArrowTrendingUpIcon, current: false },
   { name: "Users", href: "/users", icon: UserGroupIcon, current: false },
   { name: "Contact", href: "/contact", icon: ChatBubbleBottomCenterTextIcon, current: false },
 ];
-const userNavigation = [
-  { name: "Your Profile", href: "#" },
-  { name: "Settings", href: "#" },
-  { name: "Sign out", href: "#" },
-];
+
 const communities = [
   { name: "React", href: "#" },
   { name: "Flutter", href: "#" },

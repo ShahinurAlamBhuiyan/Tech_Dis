@@ -7,7 +7,7 @@ export default function ViewQuestion() {
   return (
     <div>
       <header>
-        <title>AlgoMaster</title>
+        <title>Tech Discussion</title>
       </header>
       <ViewQSN question_id = {question_id}/>
     </div>

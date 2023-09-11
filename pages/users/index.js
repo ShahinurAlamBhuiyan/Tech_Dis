@@ -31,11 +31,7 @@ import { BsFillCaretUpFill as Downvote } from "react-icons/bs";
 import { Button } from "@mui/material";
 import Image from "next/image";
 import { Input } from "@material-tailwind/react";
-const user = {
-  name: "Yeasir Arafat",
-  email: "yeasir402@gmail.com",
-  imageUrl: "/images/yeasir.jpg",
-};
+
 const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: false },
   { name: "Tags", href: "/tags", icon: ArrowTrendingUpIcon, current: false },

@@ -1,6 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
 import { Menu, Popover, Transition } from "@headlessui/react";
-import yeasir_img from '../../public/images/yeasir.jpg'
 import {
   ChatBubbleLeftEllipsisIcon,
   CodeBracketIcon,

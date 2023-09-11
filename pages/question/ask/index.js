@@ -32,11 +32,7 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 import { Input } from "@material-tailwind/react";
 import Link from "next/link";
-const user = {
-  name: "Yeasir Arafat",
-  email: "yeasir402@gmail.com",
-  imageUrl: "/images/yeasir.jpg",
-};
+
 const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: true },
   { name: "Questions", href: "#", icon: FireIcon, current: false },
@@ -55,11 +51,7 @@ const navigation = [
     current: false,
   },
 ];
-const userNavigation = [
-  { name: "Your Profile", href: "#" },
-  { name: "Settings", href: "#" },
-  { name: "Sign out", href: "#" },
-];
+
 const communities = [
   { name: "React", href: "#" },
   { name: "Flutter", href: "#" },
@@ -78,135 +70,6 @@ const tabs = [
   { name: "Recent", href: "#", current: true },
   { name: "Most Viewed", href: "#", current: false },
   { name: "Most Answers", href: "#", current: false },
-];
-
-const questions = [
-  {
-    id: "81614",
-    likes: "29",
-    replies: "11",
-    views: "2.7k",
-    author: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-      href: "#",
-    },
-    date: "December 9 at 11:43 AM",
-    datetime: "2020-12-09T11:43:00",
-    href: "#",
-    title: "How to cleanly make multiple elements movable anywhere?",
-    body: `
-      <p>The problem is: I don't wanna test for every single date field, like year, month, day, hour, minute, etc., but if I simply compare the two values, it'll always display both values, since the time precision goes beyond seconds, making the dates different even though I never edited that particular post.</p>
-    `,
-  },
-  {
-    id: "81614",
-    likes: "29",
-    replies: "11",
-    views: "2.7k",
-    author: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-      href: "#",
-    },
-    date: "December 9 at 11:43 AM",
-    datetime: "2020-12-09T11:43:00",
-    href: "#",
-    title: "How to create 'Published' and 'Last edited' fields?",
-    body: `
-      <p>The problem is: I don't wanna test for every single date field, like year, month, day, hour, minute, etc., but if I simply compare the two values, it'll always display both values, since the time precision goes beyond seconds, making the dates different even though I never edited that particular post.</p>
-    `,
-  },
-  {
-    id: "81614",
-    likes: "29",
-    replies: "11",
-    views: "2.7k",
-    author: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-      href: "#",
-    },
-    date: "December 9 at 11:43 AM",
-    datetime: "2020-12-09T11:43:00",
-    href: "#",
-    title:
-      "ChatBot - Trouble using custom gpt_index and langchain libraries for creating a GPT-3 based search index",
-    body: `
-      <p>The problem is: I don't wanna test for every single date field, like year, month, day, hour, minute, etc., but if I simply compare the two values, it'll always display both values, since the time precision goes beyond seconds, making the dates different even though I never edited that particular post.</p>
-    `,
-  },
-  // More questions...
-];
-const whoToFollow = [
-  {
-    name: "Yeasir Arafat",
-    handle: "yeasirar",
-    href: "#",
-    imageUrl: "/images/yeasir.jpg",
-  },
-  {
-    name: "Yeasir Arafat",
-    handle: "yeasirar",
-    href: "#",
-    imageUrl: "/images/yeasir.jpg",
-  },
-  {
-    name: "Yeasir Arafat",
-    handle: "yeasirar",
-    href: "#",
-    imageUrl: "/images/yeasir.jpg",
-  },
-  // More people...
-];
-const trendingPosts = [
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-  {
-    id: 1,
-    user: {
-      name: "Yeasir Arafat",
-      imageUrl: "/images/yeasir.jpg",
-    },
-    body: "How to cleanly make multiple elements movable anywhere?",
-    comments: 291,
-  },
-
-  // More posts...
 ];
 
 function classNames(...classes) {
@@ -370,9 +233,6 @@ export default function AskQuestion() {
             <main className="lg:col-span-12 xl:col-span-10">
               <div className="mt-0">
                 <ul role="list" className="space-y-4">
-                  {/* <li className="bg-white px-4 py-6 shadow sm:rounded-lg sm:p-6">
-                    <h1 className="text-3xl">Ask a public question</h1>
-                  </li> */}
                   <li className="bg-white px-4 py-6 shadow sm:rounded-lg sm:p-6">
                     <div>
                       <h1 className="mb-1 text-3xl font-bold">
@@ -472,8 +332,6 @@ export default function AskQuestion() {
                       }}
                       editorLoaded={editorLoadedExp}
                     />
-
-                    {/* {JSON.stringify(dataExp)} */}
                   </li>
                   <li className="bg-white px-4 py-6 shadow sm:rounded-lg sm:p-6">
                     <div>

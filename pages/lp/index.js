@@ -3,7 +3,7 @@ export default function Lp({ search }) {
   return (
     <div>
       <header>
-        <title>AlgoMaster - Learning Platform</title>
+        <title>Tech Discussion - Learning Platform</title>
       </header>
       <HomePage />
     </div>

@@ -1,11 +1,10 @@
-import Navbar from '../../components/navbar/navbar'
 import Contact from '../../components/about/Contact'
 
 const contactPage = () => {
   return (
     <div>
     <header>
-      <title>AlgoMaster</title>
+      <title>Tech Discussion</title>
     </header>
       <Contact />
     </div>

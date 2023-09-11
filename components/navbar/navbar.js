@@ -1,5 +1,4 @@
 import logo from "../../public/images/logo.png";
-import yeasir_img from "../../public/images/yeasir.jpg";
 import Image from "next/image";
 import { Menu, Popover, Transition } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
@@ -96,9 +95,9 @@ export default function Navbar({ onSearchChange }) {
                     <div className="flex flex-shrink-0 items-center">
                       <Link href="/">
                         <Image
-                          className="block h-8 w-auto"
+                          className="block h-14 w-auto"
                           src={logo}
-                          alt="qoverflow"
+                          alt="techDis"
                         />
                       </Link>
                     </div>
@@ -267,7 +266,7 @@ export default function Navbar({ onSearchChange }) {
                     </div>
                   ) : (
                     <div className="hidden lg:flex lg:items-center lg:justify-end xl:col-span-4">
-                      {path[1] === "h" && path[2] === "o" ? (
+                      {path[1] === "l" && path[2] === "p" ? (
                         <Link
                           href="/"
                           className="ml-6 inline-flex items-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2"

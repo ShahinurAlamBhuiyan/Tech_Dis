@@ -19,7 +19,7 @@ const Footer = () => {
                 {/* <img src={logo} className="h-8 mr-3" alt="FlowBite Logo" /> */}
                 <Image
                   className="mr-3 mt-5"
-                  alt="qOverflow"
+                  alt="techDis"
                   width={250}
                   src={logo}
                   placeholder="blur"
@@ -97,7 +97,7 @@ const Footer = () => {
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2023{" "}
               <Link href="/" className="hover:underline">
-                qOverflow™
+              techDis™
               </Link>
               . All Rights Reserved.
             </span>
