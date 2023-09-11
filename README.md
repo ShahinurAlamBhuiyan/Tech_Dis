@@ -20,3 +20,13 @@
 - mongoose
 - sharp
 - sweetalert
+
+### Take a look -->
+- homepage
+![alt text](public/site1.png)
+
+- view question
+![alt text](public/site2.png)
+
+- ASK_AI
+![alt text](public/site3.png)
