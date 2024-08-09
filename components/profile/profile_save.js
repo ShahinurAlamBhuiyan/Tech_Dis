@@ -11,7 +11,7 @@ export default function ProfileSave() {
       replies: "11",
       views: "2.7k",
       author: {
-        name: "Yeasir Arafat",
+        name: "Shahinur Alam Bhuiyan",
         imageUrl: "flsdj",
         href: "#",
       },
@@ -29,7 +29,7 @@ export default function ProfileSave() {
       replies: "11",
       views: "2.7k",
       author: {
-        name: "Yeasir Arafat",
+        name: "Shahinur Alam Bhuiyan",
         imageUrl: "flsdj",
         href: "#",
       },
@@ -47,7 +47,7 @@ export default function ProfileSave() {
       replies: "11",
       views: "2.7k",
       author: {
-        name: "Yeasir Arafat",
+        name: "Shahinur Alam Bhuiyan",
         imageUrl: "flsdj",
         href: "#",
       },

@@ -152,14 +152,7 @@ export default function ViewQuestion({question_id}) {
         authorUsername: user.username,
       }),
     });
-    const resp = await res.json();
     
-    // if(resp.status === 200){
-    //   alert(resp.message);
-    // }
-    // else{
-    //   alert(resp.message);
-    // }
     const fetchData = async () => {
       const res = await fetch("/api/question/update_question", {
         method: "POST",
@@ -206,7 +199,6 @@ export default function ViewQuestion({question_id}) {
       console.log(data);
       if(res.status === 200) {
         setComments(data);
-        // alert("Comments loaded successfully");
       }
     };
     fetchData();
@@ -227,13 +219,6 @@ export default function ViewQuestion({question_id}) {
         authorUsername: user.username,
       }),
     });
-    const resp = await res.json();
-    // if(resp.status === 200){
-    //   alert(resp.message);
-    // }
-    // else{
-    //   alert(resp.message);
-    // }
   };
 
   const [topUser,setTopUser] = useState(null);
@@ -268,7 +253,6 @@ export default function ViewQuestion({question_id}) {
         },
         body: JSON.stringify({
           search: "",
-          // sortby: sort_by,
         }),
       });
       const data = await res.json();

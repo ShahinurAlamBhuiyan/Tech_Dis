@@ -27,6 +27,7 @@ const Ask_AI = ({ question }) => {
   const textContent = tempDiv.textContent || tempDiv.innerText;
 
   const fetchedSelectedQuestion = async () => {
+    console.log('hitted ai')
     setIsLoading(true);
     const res = await fetch("/api/ai/ask", {
       method: "POST",
